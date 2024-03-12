@@ -43,4 +43,14 @@ router.post('/ex2', function(req, res){
 
 })
 
+router.post('/ex3', function(req, res){
+    
+    let {salario, reajuste} = req.body
+    salario = Number(salario)
+    const reajuste2 = reajuste/100
+    const novoSalario = Number(salario + (salario*reajuste2))
+
+    res.json({novoSalario})
+})
+
 module.exports = router
