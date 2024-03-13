@@ -1,0 +1,23 @@
+COMANDOS BACKEND
+git config --global user.name "Macielx7"
+git config --global user.email davimacielbsb@gmail.com
+
+// Instalar o express
+npm i express
+npm i nodemon
+
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+
+const express = require('express')
+const app = express()
+
+
+app.get('/',function(req, res){
+    res.send('Rota Principal')             
+})
+
+
+
+
+
